@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+    padding: 40px;
+}
+
+.myVTable_wrapper {
+    overflow: hidden;
+}
+
+.myVTable_header_row, .myVTable_header_row_filter {
+    background-color: #FFF;
+}
