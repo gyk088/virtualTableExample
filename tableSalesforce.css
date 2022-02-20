@@ -9,7 +9,7 @@ body {
 
 .myVTable_header_wrapper {
     padding-right: 15px;
-    background-color: #ccc;
+    background-color: rgb(243, 243, 243);
 }
 
 .myVTable_header, .myVTable_table {
@@ -19,18 +19,30 @@ body {
 }
 
 .myVTable_header {
-    border-right: 1px solid #1CA1C1;
-    border-bottom: 1px solid #1CA1C1;
-    background-color: #ccc;
+    border-right: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background-color: rgb(243, 243, 243);
+}
+
+.myVTable_header_row {
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+.myVTable_header_row_cell {
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+.myVTable_header_row_cell:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .myVTable_header_row_cell_div_filter,
 .myVTable_header_row_cell_div {
+    font-size: 13px;
     padding: 8px;
-    font-weight: 600;
+    font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: center;
 }
 
 .myVTable_header_row_cell_sort {
@@ -39,30 +51,33 @@ body {
 
 .myVTable_header_row_cell_sort .myVTable_header_row_cell_wrapper::after {
     content: "\⇅";
+    font-size: 13px;
 }
 
 .myVTable_header_row_cell_sort_asc .myVTable_header_row_cell_wrapper::after {
     content: "🠑";
+    font-size: 13px;
 }
 
 .myVTable_header_row_cell_sort_desc .myVTable_header_row_cell_wrapper::after {
     content: "🠓";
+    font-size: 13px;
 }
 
 .myVTable_header_row_cell_input_filter {
-    border: solid 1px #1CA1C1;
+    border: solid 1px rgb(200, 200, 200);
     border-radius: 5px;
     vertical-align: middle;
     height: 32px;
 }
 
 .myVTable_header_row_cell_input_filter:focus, .myVTable_header_row_cell_input_filter:focus-visible {
-    border-color: #1CA1C1;
+    border-color: rgb(200, 200, 200);
     outline: none;
 }
 
 .myVTable_header_row {
-    border-bottom: 1px solid #1CA1C1;
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 .myVTable_body_wrapper {
@@ -70,7 +85,7 @@ body {
 }
 
 .myVTable_body_row {
-    border-bottom: 1px solid #1CA1C1;
+    border-bottom: 1px solid rgb(200, 200, 200);
     cursor: pointer;
 }
 
@@ -79,6 +94,7 @@ body {
 }
 
 .myVTable_body_cell_div {
+    font-size: 13px;
     font-weight: 400;
     text-align: center;
 }
@@ -88,7 +104,7 @@ body {
 }
 
 .myVTable_body_row_active {
-    background-color: #e6e6e6;
+    background-color: rgb(243, 243, 243);
 }
 
 .myVTable_no_data, .myVTable_no_loading {
@@ -108,7 +124,7 @@ body {
 
 .myVTable_footer_wrapper {
   width: 100%;
-  background-color: #ccc;
+  background-color: rgb(243, 243, 243);
   display: flex;
   align-items: center;
   padding-left: 10px;
