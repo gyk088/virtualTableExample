@@ -166,7 +166,7 @@ export default class MyComponent extends LightningElement {
 }
 ```
 
-[![Deploy](https://gyk088.github.io/virtualTableExample/example.png)]
+![Example](https://gyk088.github.io/virtualTableExample/example.png)
 
 
 
