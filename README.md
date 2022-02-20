@@ -1,15 +1,11 @@
 # Table with virtual scroll and infinite scroll
 ## Overview
-
-##### [Example][example]
+**[Example][example]**
 
 #### This table has advanced functionality
 #### Written in pure javascript
 #### Easy integration into various frameworks (React, Vue, Angular)
 #### Easy integration into Salesforce
-
-
-
 ## Features:
 * virtual scroll
 * infinite scroll
