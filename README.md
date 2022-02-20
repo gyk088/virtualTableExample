@@ -69,7 +69,7 @@
         width: '7%',
         filter: true,
         sort: true,
-        template: (row, index) => {
+        template: (row, RowIndex) => {
             if (row.number % 2 !== 0) {
                 return `<div style="color: red">${row._vTableId}<div>`
             } else {
@@ -99,7 +99,7 @@
 * `width` - optional, type **String**. Table column width. Yuo can use **px** or **%**.
 * `sort` - optional, type **Boolean**. Sorting option.  By default **false**.
 * `filter` - optional, type **Boolean**. Filter option.  By default **false**.
-* `template` - optional, type **Function**. Cell template. See below.
+* `template` - optional, type **Function**. Cell template. `row` - row object, `RowIndex` - row index. Return string or string with html.
 
 ### Table Api
 
