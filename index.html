@@ -70,6 +70,7 @@
 ];
 
     const el = document.getElementById("TEST");
+
     const vtable = new vTable({
         node: el,
         numberOfVisibleRows: 10,
@@ -144,15 +145,11 @@
 
     setTimeout(() => {
         vtable.setData(newData);
-        vtable.selectAll();
-        vtable.removeSelection();
         vtable.setFooterContent('row count: ' + vtable.getRowCount());
-
-    }, 0)
-
-    setTimeout(() => {
         vtable.loadingStop();
-    }, 3000)
+    }, 1000)
+
+
 
 </script>
 </html>

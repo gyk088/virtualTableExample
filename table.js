@@ -53,6 +53,10 @@ function vTable(config) {
     this._bind();
 
     this.config.node.appendChild(this.wrapper);
+
+    if (this._loading) {
+      this.loadingStart();
+    }
   }
 
   vTable.prototype.getRowCount = function() {
@@ -155,6 +159,10 @@ function vTable(config) {
       this.wrapper.appendChild(this.scrollWrapper);
     }
     this.scrollWrapper.scrollTop = this.scrollTop;
+
+    if (this._loading) {
+      this.loadingStart();
+    }
   }
 
   vTable.prototype._initScroll = function() {
@@ -299,7 +307,7 @@ function vTable(config) {
 
           const div = document.createElement("div");
           div.classList.add('myVTable_header_row_cell_div');
-          div.innerText = d.title;
+          div.innerText = d.title ? d.title : '' ;
 
           const divSortWrapper = document.createElement("div");
           divSortWrapper.classList.add('myVTable_header_row_cell_wrapper');
