@@ -1,6 +1,8 @@
 # Table with virtual scroll and infinite scroll
 ## Overview
 
+##### [Example][example]
+
 #### This table has advanced functionality
 #### Written in pure javascript
 #### Easy integration into various frameworks (React, Vue, Angular)
@@ -167,6 +169,9 @@ export default class MyComponent extends LightningElement {
 ```
 
 ![Example](https://gyk088.github.io/virtualTableExample/example.png)
+
+
+[example]: https://gyk088.github.io/virtualTableExample/
 
 
 
