@@ -6,6 +6,8 @@
 #### Easy integration into various frameworks (React, Vue, Angular)
 #### Easy integration into Salesforce
 
+
+
 ## Features:
 * virtual scroll
 * infinite scroll
@@ -162,6 +164,9 @@ export default class MyComponent extends LightningElement {
     }
 
 }
+```
+
+[![Deploy](https://gyk088.github.io/virtualTableExample/example.png)]
 
 
 
