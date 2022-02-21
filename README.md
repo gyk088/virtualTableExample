@@ -54,8 +54,8 @@
 * `config.footer` - optional, type **Object**, footer definition.
 * `config.footer.height` - optional, type **Integer**, footer height.
 * `config.footer.content` - optional, type **String**, footer content. You cant paste string `your text` or html string `<div style="color:red"> your text </div>`.
-* `config.onRowClick` - optional, type **Function**, row click event. `row` - selected row object, `RowIndex` - `integer` selected row index, `
-* `config.onRowDblClick` - optional, type **Function**, row double click event. `row` - selected row object, `RowIndex` - selected row index.
+* `config.onRowClick` - optional, type **Function**, row click event. `row` - selected row object, `RowIndex` - **Integer**, selected row index, `selected` - **Boolean**, used with `config.multiSelect`
+* `config.onRowDblClick` - optional, type **Function**, row double click event. `row` - selected row object, `RowIndex` - **Integer**, selected row index, `selected` - **Boolean**, used with `config.multiSelect`
 * `config.next` - optional, type **Function**, scroll end event. If you want to implement infinite scroll you need to use this event. `lastRow` - last row object.
 * `data` - optional, type **Array**, data for table.
 
