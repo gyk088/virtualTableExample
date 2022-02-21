@@ -83,13 +83,13 @@
             content: 'No content'
         },
         loading: '<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>',
-        onRowClick: function(data, index) {
-            console.log('onRowClick', index, data);
+        onRowClick: function(data, index, selected) {
+            console.log('onRowClick', index, data, selected);
             data.ClassName__c = 'New Data';
             vtable.reRender();
         },
-        onRowDblClick: function(data, index) {
-            console.log('onRowDblClick', index, data);
+        onRowDblClick: function(data, index, selected) {
+            console.log('onRowDblClick', index, data, selected);
         },
         next: function(lastRow) {
             console.log(lastRow)

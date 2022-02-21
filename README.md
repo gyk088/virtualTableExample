@@ -37,9 +37,9 @@
             content: 'text string or html string'
         },
         loading: 'text string or html string',
-        onRowClick: function(row, RowIndex) {},
-        onRowDblClick: function(row, RowIndex) {},
-        next: function(lastRow) {}
+        onRowClick: function(row, RowIndex, selected) {},
+        onRowDblClick: function(row, RowIndex, selected) {},
+        next: function(lastRow) {},
         data: []
     }
 ```
@@ -49,12 +49,12 @@
 * `config.rowHeight` - required, type **Integer**, height of row.
 * `config.header` - required, type **Object**, complex type. See below.
 * `config.multiSelect` - optional, type **Boolean**, if true - you can select many rows. By default **false**.
-* `config.noDataText` - optional, type **String**, you cant paste string **'your text'** or html string **<div style="color:red"> your text </div>**. When table is empty, this text will appear. By default **There is no data**.
-* `config.loading` - optional, type **String**, you cant paste string **'your text'** or html string **<div style="color:red"> your text </div>**. When you call the method **vtable.loadingStart()**, this text will appear. By default **Loading...**.
+* `config.noDataText` - optional, type **String**, you cant paste string `your text` or html string `<div style="color:red"> your text </div>`. When table is empty, this text will appear. By default **There is no data**.
+* `config.loading` - optional, type **String**, you cant paste string `your text` or html string `<div style="color:red"> your text </div>`. When you call the method **vtable.loadingStart()**, this text will appear. By default **Loading...**.
 * `config.footer` - optional, type **Object**, footer definition.
 * `config.footer.height` - optional, type **Integer**, footer height.
-* `config.footer.content` - optional, type **String**, footer content. You cant paste string **'your text'** or html string **<div style="color:red"> your text </div>**.
-* `config.onRowClick` - optional, type **Function**, row click event. `row` - selected row object, `RowIndex` - selected row index.
+* `config.footer.content` - optional, type **String**, footer content. You cant paste string `your text` or html string `<div style="color:red"> your text </div>`.
+* `config.onRowClick` - optional, type **Function**, row click event. `row` - selected row object, `RowIndex` - `integer` selected row index, `
 * `config.onRowDblClick` - optional, type **Function**, row double click event. `row` - selected row object, `RowIndex` - selected row index.
 * `config.next` - optional, type **Function**, scroll end event. If you want to implement infinite scroll you need to use this event. `lastRow` - last row object.
 * `data` - optional, type **Array**, data for table.
@@ -95,7 +95,7 @@
 ```
 ###### Config Header parameters:
 * `key` - required, type **String**. The key from your data that you want to display.
-* `title` - optional, type **String**. Table header cell content. You cant paste string **'your text'** or html string **<div style="color:red"> your text </div>**.
+* `title` - optional, type **String**. Table header cell content. You cant paste string `your text` or html string `<div style="color:red"> your text </div>`.
 * `width` - optional, type **String**. Table column width. Yuo can use **px** or **%**.
 * `sort` - optional, type **Boolean**. Sorting option.  By default **false**.
 * `filter` - optional, type **Boolean**. Filter option.  By default **false**.
@@ -136,7 +136,7 @@
 * `vtable.removeSelection()` - remove all selection in the table.
 * `vtable.loadingStart()` - show the loader.
 * `vtable.loadingStop()` - hide the loader.
-* `vtable.setFooterContent('String')` - set footer content.  You cant set string **'your text'** or html string **<div style="color:red"> your text </div>**.
+* `vtable.setFooterContent('String')` - set footer content.  You cant set string `your text` or html string `<div style="color:red"> your text </div>`.
 * `vtable.reRender()` - re-render the table.
 * `vtable.destroy()`  - destroy the table.
 
@@ -144,7 +144,7 @@
 
 ## Salesforce
 This table is very easy to use in LWC.<br>
-If you want to use thi table in LWC you need:
+If you want to use this table in LWC you need:
 * Copy `table.js` and past it into your LWC component
 * Copy  all styles from `tableSalesforce.css` and past them into the LWC style component file
 
