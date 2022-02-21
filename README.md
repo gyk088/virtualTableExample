@@ -26,7 +26,7 @@
 
 ```javaScript
     const config = {
-        node: domElement
+        node: domElement,
         numberOfVisibleRows: 10,
         rowHeight: 32,
         header: header,
@@ -44,7 +44,7 @@
     }
 ```
 ###### Config parameters:
-* `config.node` - optional, type **HTMLElement**, html dom element **const el = document.getElementById("TEST");**.
+* `config.node` - optional, type **HTMLElement**, html dom element `const el = document.getElementById("TEST");`.
 * `config.numberOfVisibleRows` - required, type **Integer**, number of visible rows.
 * `config.rowHeight` - required, type **Integer**, height of row.
 * `config.header` - required, type **Object**, complex type. See below.
