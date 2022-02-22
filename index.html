@@ -4,10 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="table.js"></script>
-    <link rel="stylesheet" href="table.css"/>
+    <script src="table.example.js"></script>
+    <link rel="stylesheet" href="table.example.css"/>
+    <link rel="stylesheet" name="canChange" href="table.min.css"/>
 </head>
 <body>
+    <h1>Table Example</h1>
+    <p>
+        github : <a href="https://github.com/gyk088/virtualTableExample" alt="github">https://github.com/gyk088/virtualTableExample</a>
+    </p>
+    <div>
+        <h3>Select a table style:</h3>
+        <form name="changeStyle">
+            <div>
+                <input type="radio" id="dewey" name="styleRadio" value="table.min.css" checked>
+                <label for="dewey">Default</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="styleRadio" value="table.salesforce.min.css">
+                <label for="louie">Salesforce</label>
+            </div>
+        </form>
+    </div>
+    <br/>
+    <br/>
+
     <div id="TEST"></div>
 </body>
 <script>
@@ -149,6 +171,13 @@
         vtable.loadingStop();
     }, 1000)
 
+
+    var rad = document.changeStyle.styleRadio;
+    for (var i = 0; i < rad.length; i++) {
+        rad[i].addEventListener('change', function() {
+            document.querySelector("link[name='canChange']").href = this.value;
+        });
+    }
 
 
 </script>
