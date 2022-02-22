@@ -1,6 +1,6 @@
 {
   "name": "tablevscroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Table with virtual scroll and infinite scroll",
   "main": "table.min.js",
   "repository": {
