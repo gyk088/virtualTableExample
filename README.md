@@ -184,7 +184,7 @@ export default {
     data() {
         return {
             vTable: null,
-            vTabelData: [],
+            vTablelData: [],
         };
     },
     async mounted() {
