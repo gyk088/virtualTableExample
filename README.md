@@ -171,7 +171,7 @@ export default class MyComponent extends LightningElement {
 ```
 
 ## Vue.js example:
-```
+```javaScript
 <template>
     <div ref="vTabel"/></div>
 </template>
@@ -197,7 +197,7 @@ export default {
 
         this.vTabelData = await getData();
 
-        this.vTable.setData(data);
+        this.vTable.setData(this.vTabelData);
 
         this.vTable.loadingStop();
     }
