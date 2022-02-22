@@ -1,6 +1,8 @@
 # Table with virtual scroll and infinite scroll
 ## Overview
 **[Example][example]**
+**[Git][git]**
+**[npm][npm]**
 
 #### This table has advanced functionality
 #### Written in pure javascript
@@ -14,8 +16,11 @@
 * row selection
 * multi select
 * loader
+* js size: 11.5 kB
+* css size: 1.6 kB
 
 ## Usage
+`npm i tablevscroll`
 ### Create table:
 
 ```javaScript
@@ -168,7 +173,8 @@ export default class MyComponent extends LightningElement {
 
 
 [example]: https://gyk088.github.io/virtualTableExample/
-
+[git]: https://github.com/gyk088/virtualTableExample
+[npm]: https://www.npmjs.com/package/tablevscroll
 
 
 
