@@ -20,7 +20,9 @@
 * css size: 1.6 kB
 
 ## Usage
-```npm i tablevscroll -S````
+```
+npm i tablevscroll -S
+```
 
 ### Create table:
 

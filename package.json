@@ -1,6 +1,6 @@
 {
   "name": "tablevscroll",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Table with virtual scroll and infinite scroll",
   "main": "table.min.js",
   "repository": {
@@ -12,5 +12,15 @@
   "bugs": {
     "url": "https://github.com/gyk088/virtualTableExample/issues"
   },
+  "keywords": [
+    "table",
+    "virtual scroll table",
+    "virtual scroll",
+    "infinite scroll",
+    "salesforce",
+    "lwc",
+    "lwc table",
+    "js table"
+  ],
   "homepage": "https://gyk088.github.io/virtualTableExample/"
 }
