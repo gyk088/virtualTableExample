@@ -149,7 +149,7 @@
 ## Vue.js example:
 ```javaScript
 <template>
-    <div ref="vTabel"></div>
+    <div ref="vTable"></div>
 </template>
 
 <script>
@@ -165,7 +165,7 @@ export default {
     },
     async mounted() {
         this.vTable = new vTable({
-            node: this.$refs.Vtabel,
+            node: this.$refs.vTable,
             ....
         });
 
