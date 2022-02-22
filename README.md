@@ -20,7 +20,8 @@
 * css size: 1.6 kB
 
 ## Usage
-`npm i tablevscroll`
+```npm i tablevscroll -S````
+
 ### Create table:
 
 ```javaScript
@@ -167,6 +168,42 @@ export default class MyComponent extends LightningElement {
     }
 
 }
+```
+
+## Vue.js example:
+```
+<template>
+    <div ref="vTabel"/></div>
+</template>
+
+<script>
+import vTable from 'tablevscroll';
+import 'tablevscroll/table.min.css';
+
+export default {
+    data() {
+        return {
+            vTable: null,
+            vTabelData: [],
+        };
+    },
+    async mounted() {
+        this.vTable = new vTable({
+            node: this.$refs.Vtabel,
+            ....
+        });
+
+        this.vTable.loadingStart();
+
+        this.vTabelData = await getData();
+
+        this.vTable.setData(data);
+
+        this.vTable.loadingStop();
+    }
+
+}
+</script>
 ```
 
 ![Example](https://gyk088.github.io/virtualTableExample/example.png)
