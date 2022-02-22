@@ -1,8 +1,8 @@
 # Table with virtual scroll and infinite scroll
 ## Overview
-**[Example][example]**
-**[Git][git]**
-**[npm][npm]**
+* **[Example][example]**
+* **[Git][git]**
+* **[npm][npm]**
 
 #### This table has advanced functionality
 #### Written in pure javascript
