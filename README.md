@@ -54,11 +54,11 @@
 * `config.rowHeight` - required, type **Integer**, height of row.
 * `config.header` - required, type **Object**, complex type. See below.
 * `config.multiSelect` - optional, type **Boolean**, if true - you can select many rows. By default **false**.
-* `config.noDataText` - optional, type **String**, you cant paste string `your text` or html string `<div style="color:red"> your text </div>`. When table is empty, this text will appear. By default **There is no data**.
-* `config.loading` - optional, type **String**, you cant paste string `your text` or html string `<div style="color:red"> your text </div>`. When you call the method **vtable.loadingStart()**, this text will appear. By default **Loading...**.
+* `config.noDataText` - optional, type **String**, you can paste string `your text` or html string `<div style="color:red"> your text </div>`. This text will appear when table is empty. The text is **There is no data** by default.
+* `config.loading` - optional, type **String**, you can paste string `your text` or html string `<div style="color:red"> your text </div>`. This text will appear when you call the method **vtable.loadingStart()**. The text is **Loading...** by default .
 * `config.footer` - optional, type **Object**, footer definition.
 * `config.footer.height` - optional, type **Integer**, footer height.
-* `config.footer.content` - optional, type **String**, footer content. You cant paste string `your text` or html string `<div style="color:red"> your text </div>`.
+* `config.footer.content` - optional, type **String**, footer content. You can paste string `your text` or html string `<div style="color:red"> your text </div>`.
 * `config.onRowClick` - optional, type **Function**, row click event. `row` - selected row object, `RowIndex` - **Integer**, selected row index, `selected` - **Boolean**, used with `config.multiSelect`
 * `config.onRowDblClick` - optional, type **Function**, row double click event. `row` - selected row object, `RowIndex` - **Integer**, selected row index, `selected` - **Boolean**, used with `config.multiSelect`
 * `config.next` - optional, type **Function**, scroll end event. If you want to implement infinite scroll you need to use this event. `lastRow` - last row object.
@@ -100,7 +100,7 @@
 ```
 ###### Config Header parameters:
 * `key` - required, type **String**. The key from your data that you want to display.
-* `title` - optional, type **String**. Table header cell content. You cant paste string `your text` or html string `<div style="color:red"> your text </div>`.
+* `title` - optional, type **String**. Table header cell content. You can paste string `your text` or html string `<div style="color:red"> your text </div>`.
 * `width` - optional, type **String**. Table column width. Yuo can use **px** or **%**.
 * `sort` - optional, type **Boolean**. Sorting option.  By default **false**.
 * `filter` - optional, type **Boolean**. Filter option.  By default **false**.
@@ -141,7 +141,7 @@
 * `vtable.removeSelection()` - remove all selection in the table.
 * `vtable.loadingStart()` - show the loader.
 * `vtable.loadingStop()` - hide the loader.
-* `vtable.setFooterContent('String')` - set footer content.  You cant set string `your text` or html string `<div style="color:red"> your text </div>`.
+* `vtable.setFooterContent('String')` - set footer content.  You can set string `your text` or html string `<div style="color:red"> your text </div>`.
 * `vtable.reRender()` - re-render the table.
 * `vtable.destroy()`  - destroy the table.
 
