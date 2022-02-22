@@ -1,0 +1,16 @@
+{
+  "name": "tablevscroll",
+  "version": "1.0.0",
+  "description": "Table with virtual scroll and infinite scroll",
+  "main": "table.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyk088/virtualTableExample.git"
+  },
+  "author": "Andrey Zhuk <gyk088@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyk088/virtualTableExample/issues"
+  },
+  "homepage": "https://gyk088.github.io/virtualTableExample/"
+}
