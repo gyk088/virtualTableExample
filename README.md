@@ -146,30 +146,6 @@
 * `vtable.reRender()` - re-render the table.
 * `vtable.destroy()`  - destroy the table.
 
-
-
-## Salesforce
-This table is very easy to use in LWC.<br>
-If you want to use this table in LWC you need:
-* Copy `table.js` and past it into your LWC component
-* Copy  all styles from `tableSalesforce.css` and past them into the LWC style component file
-
-```javaScript
-import { LightningElement } from 'lwc';
-import vTable from './table';
-
-export default class MyComponent extends LightningElement {
-
-    renderedCallback() {
-        this.tableElement = this.template.querySelector('.tableElement');
-        if (this.tableElement && !this.vtable) {
-            this.vtable = new vTable(config);
-        }
-    }
-
-}
-```
-
 ## Vue.js example:
 ```javaScript
 <template>
@@ -204,6 +180,28 @@ export default {
 
 }
 </script>
+```
+
+## Salesforce
+This table is very easy to use in LWC.<br>
+If you want to use this table in LWC you need:
+* Copy `table.js` and past it into your LWC component
+* Copy  all styles from `tableSalesforce.css` and past them into the LWC style component file
+
+```javaScript
+import { LightningElement } from 'lwc';
+import vTable from './table';
+
+export default class MyComponent extends LightningElement {
+
+    renderedCallback() {
+        this.tableElement = this.template.querySelector('.tableElement');
+        if (this.tableElement && !this.vtable) {
+            this.vtable = new vTable(config);
+        }
+    }
+
+}
 ```
 
 ![Example](https://gyk088.github.io/virtualTableExample/example.png)
