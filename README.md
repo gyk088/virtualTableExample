@@ -173,7 +173,7 @@ export default class MyComponent extends LightningElement {
 ## Vue.js example:
 ```javaScript
 <template>
-    <div ref="vTabel"/></div>
+    <div ref="vTabel"></div>
 </template>
 
 <script>
